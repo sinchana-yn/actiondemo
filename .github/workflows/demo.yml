@@ -18,7 +18,7 @@ jobs:
       with:
         host: ${{ secrets.EC2_IP }}
         username: ubuntu
-        key: ${{ secrets.EC2_SSH_KEY }}
+        key: ${{ secrets.EC2_KEY }}
         source: "."
         target: "/home/ubuntu/app"
 
@@ -27,7 +27,7 @@ jobs:
       with:
         host: ${{ secrets.EC2_IP }}
         username: ubuntu
-        key: ${{ secrets.EC2_SSH_KEY }}
+        key: ${{ secrets.EC2_KEY }}
         script: |
           cd /home/ubuntu/app
 
